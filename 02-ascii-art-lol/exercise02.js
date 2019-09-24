@@ -10,8 +10,16 @@
 (function() {
 
     //your code here
+    
+    let newArray = []
 
-    writeAscii(artArray);
+    for(let i=0; i < artArray.length; i+=2){
+        
+        newArray.push(artArray[i])
+       
+    }
+    // console.log(artArray)
+    writeAscii(newArray);
 
 })();
 

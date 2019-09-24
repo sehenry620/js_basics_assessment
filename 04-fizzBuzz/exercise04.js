@@ -25,4 +25,30 @@
 
     //your code here
 
+    function fizzBuzz(maxValue){
+        let hippo = ""
+
+        for (let i = 1; i <= maxValue; i++){
+            if (i % 2 == 0 && i % 3 == 0){
+                console.log("FizzBuzz, ")
+                hippo = hippo + "FizzBuzz, "
+            }
+            else if (i % 2 == 0){
+                console.log("fizz, ");
+                hippo = hippo + "fizz, "
+            }
+            else if (i % 3 == 0){
+                console.log("buzz, ")
+                hippo = hippo + "buzz, "
+            }
+            else {
+                console.log(i + ", ")
+                hippo = hippo + i + ", "
+            }
+        }
+        return hippo   
+    }
+
+    console.log(fizzBuzz(12))
+
 })();

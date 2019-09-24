@@ -11,4 +11,12 @@
 
     //your code here
 
+    let array = gAddress.split(" ")
+    console.log(array)
+
+    for(let i = 0; i < array.length; i++){
+        let word = array[i]
+        console.log(word)
+    }
+
 })();

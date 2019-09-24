@@ -16,4 +16,9 @@
 
     //your code here
 
+    let word = "Virginia"
+    let answer = (washingtonInfo.split(word).length - 1);
+
+    console.log(answer)
+
 })();

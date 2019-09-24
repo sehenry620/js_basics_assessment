@@ -21,5 +21,19 @@
 (function () {
 
     //your code here
+    
+    document.getElementById("row").onclick = changeColor;
+
+     currentColor = "black";
+
+    function changeColor(){
+        if (currentColor = "black"){
+            document.body.style.color = "red";
+            currentColor = "red";
+        }else {
+            document.bodystyle.color = "black";
+            currentColor = "black";
+        }
+    }
 
 })();

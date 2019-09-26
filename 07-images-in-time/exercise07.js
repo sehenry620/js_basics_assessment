@@ -32,4 +32,30 @@
 
   //your code here
 
+
+
+
+    var fileNames = [
+      "cats.jpg",
+      "hugger.jpg",
+      "internet.jpg",
+      "jackson.jpg",
+      "washington.jpg"
+    ];
+//   setTimeout(function(){
+//     var url = fileNames[Math.floor(Math.random() * fileNames.length)];
+//      addImage(url)
+// },2500);
+
+function myTimeout()
+{
+  var url = fileNames[Math.floor(Math.random() * fileNames.length)];
+       addImage(url)
+    setTimeout(myTimeout, 2500);
+}
+
+myTimeout();
+  
+    
+
 })();

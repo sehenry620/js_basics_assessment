@@ -21,19 +21,63 @@
 (function () {
 
     //your code here
+
+
+    let currentColor = "black";
     
-    document.getElementById("row").onclick = changeColor;
-
-     currentColor = "black";
-
-    function changeColor(){
-        if (currentColor = "black"){
-            document.body.style.color = "red";
+    document.querySelector("h1").addEventListener("click", function (){
+        // console.log("bazinga")
+        if (currentColor == "black"){
+            document.querySelector("h1").style.color = "red";
             currentColor = "red";
         }else {
-            document.bodystyle.color = "black";
+            document.querySelector("h1").style.color = "black";
             currentColor = "black";
         }
+    })
+    function changeColor(){
+        
     }
+    changeColor()
+    changeColor()
+
+//....................................................................
+
+    let links = document.querySelectorAll(".section-container section:nth-child(2n-1)");
+    
+        // console.log(links)
+
+        for (i = 0; i < links.length; i++){
+            links[i].style.display = "none";
+            // console.log(links[i])
+        }
+//......................................................................
+
+    let notBody = document.querySelectorAll(".row .post");
+        
+
+    for(i = 0; i < notBody.length; i++){
+        notBody[i].innerHTML = notBody[i].innerHTML.replace(/Bacon/g, "LASER VISON");
+    }
+
+//...................................................................
+
+    let sectionPar = document.querySelectorAll(".row.post:nth-last-of-type(2)");
+        // console.log(sectionPar)
+        for (i = 0; i < sectionPar.length; i++){
+            sectionPar[i].style.display = "none";
+        }
+
+    let sectionPar2 = document.querySelectorAll(".row.post:nth-last-of-type(1)");
+        for(i = 0; i < sectionPar2.length; i++){
+            sectionPar2[i].style.display = "none";
+        }
+
+    
+//.......................................................................
+
+    let adPics = document.querySelector("aside");
+        console.log(adPics)
+        adPics.innerHTML = "";
 
 })();
